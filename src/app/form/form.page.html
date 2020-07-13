@@ -1,0 +1,73 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>基本的な形</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">基本的な形</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+
+    <ion-card>
+      <img src="../assets/3-1.png" />
+      <ion-card-header>
+        <ion-card-subtitle>ellipse(横の場所,縦の場所,横サイズ,縦サイズ);</ion-card-subtitle>
+        <ion-card-title>丸</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        画面に楕円を描画する。幅と高さが等しい楕円は円になる。デフォルトでは、初めの２つのパラメータで位置を設定し、３つめと４つめのパラメータでシェイプの幅と高さを設定する。高さを指定しないと、幅の値が幅と高さ両方に使用される。負の高さや幅を指定すると、その絶対値が採用される。原点はellipseMode()関数で変更できる。
+        <br />
+        シンタックス<br />
+        <pre>ellipse(x, y, w, [h])
+ellipse(x, y, w, h, detail)</pre>  
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <img src="../assets/2-1.png" />
+      <ion-card-header>
+        <ion-card-subtitle>rect(横の場所,縦の場所,横サイズ,縦サイズ);</ion-card-subtitle>
+        <ion-card-title>四角</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+
+        画面に長方形を描画する。長方形は辺を４つ持ち４つの角は90度。デフォルトでは、最初の２つのパラメータ(x, y)は長方形の左上隅の位置を設定し、３つめのパラメータ(w)は幅を、４つめのパラメータ(h)は高さを設定する。ただしパラメータがどう解釈されるかはrectMode()関数で変えることができる。
+        
+        ５，６，７，８番めのパラメータ(tl, tr, br, bl)が指定された場合には、それぞれ左上隅、右上隅、右下隅、左下隅の角の半径(角丸)を決める。省略された角丸パラメータは、パラメータリストでそれより前に指定された値に設定される。
+<br />        
+        シンタックス<br />
+        <pre> rect(x, y, w, h, [tl], [tr], [br], [bl])
+ rect(x, y, w, h, [detailX], [detailY])</pre>
+  
+
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card>
+      <img src="../assets/10.png" />
+      <ion-card-header>
+        <ion-card-subtitle>line(横の場所1,縦の場所1,横の場所2,縦の場所2);</ion-card-subtitle>
+        <ion-card-title>線</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+
+        画面に線(２点間を直接結んだ線)を描く。パラメータを４つ取るline()関数は線を2Dで描画する。線の着色には、stroke()関数を使用する。線を塗ることはできないので、fill()関数は線のカラーに影響しない。2Dの線はデフォルトで、1ピクセル幅で描画されるが、線幅はstrokeWeight()関数で変えることができる。
+<br />
+        シンタックス<br />
+        <pre>line(x1, y1, x2, y2)
+line(x1, y1, z1, x2, y2, z2)</pre>
+  
+
+      </ion-card-content>
+    </ion-card>
+
+  </div>
+</ion-content>

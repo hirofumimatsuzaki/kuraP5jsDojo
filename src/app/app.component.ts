@@ -13,34 +13,59 @@ export class AppComponent implements OnInit {
   public selectedIndex = 0;
   public appPages = [
     {
-      title: 'Inbox',
-      url: '/folder/Inbox',
-      icon: 'mail'
+      title: '基本的な形',
+      url: '/form',
+      icon: 'checkbox'
     },
     {
-      title: 'Outbox',
-      url: '/folder/Outbox',
-      icon: 'paper-plane'
+      title: '変数',
+      url: '/folder/変数',
+      icon: 'checkbox'
     },
     {
-      title: 'Favorites',
-      url: '/folder/Favorites',
-      icon: 'heart'
+      title: '繰り返し',
+      url: '/folder/繰り返し',
+      icon: 'checkbox-outline'
     },
     {
-      title: 'Archived',
-      url: '/folder/Archived',
-      icon: 'archive'
+      title: 'setup()とdraw()',
+      url: '/folder/setup()とdraw()',
+      icon: 'checkbox-outline'
     },
     {
-      title: 'Trash',
-      url: '/folder/Trash',
-      icon: 'trash'
+      title: 'インタラクション',
+      url: '/folder/インタラクション',
+      icon: 'checkbox-outline'
     },
     {
-      title: 'Spam',
-      url: '/folder/Spam',
-      icon: 'warning'
+      title: '画像を読み込む',
+      url: '/folder/画像を読み込む',
+      icon: 'checkbox-outline'
+    },
+    {
+      title: 'フォント',
+      url: '/folder/フォント',
+      icon: 'checkbox'
+    },
+    {
+      title: '動き',
+      url: '/folder/動き',
+      icon: 'checkbox-outline'
+    },
+    {
+      title: 'ランダム',
+      url: '/folder/ランダム',
+      icon: 'checkbox-outline'
+    },
+    {
+      title: '円運動',
+      url: '/folder/円運動',
+      icon: 'checkbox-outline'
+    },
+    {
+      title: '位置の変更',
+      url: '/folder/位置の変更',
+      icon: 'checkbox-outline'
     }
   ];
   public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
